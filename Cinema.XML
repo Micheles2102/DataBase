@@ -1,0 +1,58 @@
+<database>
+  <table name="Cinema">
+    <column name="id" type="INT" nullable="false" />
+    <column name="città" type="VARCHAR(15)" nullable="true" default="NULL" />
+    <column name="Numero_Sale" type="INT" nullable="false" />
+  </table>
+  
+  <table name="Sala">
+    <column name="id_sala" type="INT" nullable="false" />
+    <column name="Aperta_e/o_Chiusa" type="VARCHAR(15)" nullable="true" default="NULL" />
+    <column name="Numero_Posti" type="INT" nullable="false" />
+    <column name="Prenotabile" type="VARCHAR(13)" nullable="true" default="NULL" />
+  </table>
+  
+  <table name="film">
+    <column name="id_film" type="INT" nullable="false" />
+    <column name="sala" type="INT" nullable="false" />
+    <column name="nome" type="VARCHAR(15)" nullable="true" default="NULL" />
+    <column name="Orario_inizio" type="VARCHAR(15)" nullable="true" default="NULL" />
+    <column name="Orario_fine" type="VARCHAR(15)" nullable="true" default="NULL" />
+    <column name="Data_di_uscita" type="VARCHAR(15)" nullable="true" default="NULL" />
+    <column name="Durata" type="VARCHAR(15)" nullable="true" default="NULL" />
+    <column name="Data_di_ritiro" type="VARCHAR(15)" nullable="true" default="NULL" />
+    <column name="genere" type="VARCHAR(13)" nullable="true" default="NULL" />
+  </table>
+  
+  <table name="Biglietto">
+    <column name="id_biglietto" type="INT" nullable="false" />
+    <column name="id_del film" type="INT" nullable="false" />
+    <column name="id_cliente" type="INT" nullable="false" />
+    <column name="3D" type="VARCHAR(15)" nullable="true" default="NULL" />
+    <column name="Posti" type="VARCHAR(15)" nullable="true" default="NULL" />
+    <column name="Costo_Biglietto" type="INT" nullable="false" />
+    <column name="Nome" type="VARCHAR(15)" nullable="true" default="NULL" />
+    </table>
+    
+    <table name="Clienti">
+    <column name="id_biglietto" type="INT" nullable="false" />
+    <column name="id" type="INT" nullable="false" />
+    <column name="Nome" type="VARCHAR(15)" nullable="true" default="NULL" />
+    <column name="Cognome" type="VARCHAR(15)" nullable="true" default="NULL" />
+    <column name="età" type="INT" nullable="false" />
+    <column name="Genere" type="VARCHAR(15)" nullable="true" default="NULL" />
+  </table>
+  
+  <table name="Dipendenti">
+    <column name="id" type="INT" nullable="false" />
+    <column name="id_cinema" type="INT" nullable="false" />
+    <column name="Nome" type="VARCHAR(15)" nullable="true" default="NULL" />
+    <column name="Cognome" type="VARCHAR(15)" nullable="true" default="NULL" />
+    <column name="Occupazione" type="VARCHAR(13)" nullable="true" default="NULL" />
+    <column name="Stipendio" type="INT" nullable="false" />
+    <column name="Orario_Inizio" type="VARCHAR(13)" nullable="true" default="NULL" />
+    <column name="Orario_Fine" type="VARCHAR(13)" nullable="true" default="NULL" />
+    <column name="Presenza" type="VARCHAR(13)" nullable="true" default="NULL" />
+  </table>
+</database>
+
