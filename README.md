@@ -1,4 +1,6 @@
+
 Cinema Database Repository
+
 This repository contains a database created for a cinema, designed to manage and organize various aspects of cinema operations. The repository includes the following key files:
 
 Cinema.XML:
